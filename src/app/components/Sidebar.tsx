@@ -23,7 +23,7 @@ const Sidebar = () => {
     <>
       {menus.map((menu, idx) => (
         <Link href={menu.href} key={idx}>
-          <p className="flex flex-col items-center">
+          <p className="flex flex-col items-center transition-all">
             <span
               className={clsx("lg:text-3xl text-xl text-blue-300", {
                 "text-blue-600": pathname === menu.href,
@@ -31,7 +31,13 @@ const Sidebar = () => {
             >
               {menu.icon}
             </span>
-            <span className="text-xs">{menu.text}</span>
+            <span
+              className={clsx("text-xs transition-all", {
+                "font-bold": pathname === menu.href,
+              })}
+            >
+              {menu.text}
+            </span>
           </p>
         </Link>
       ))}
