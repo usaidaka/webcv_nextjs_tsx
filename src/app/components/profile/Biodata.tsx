@@ -3,6 +3,7 @@ import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
 hljs.registerLanguage("javascript", javascript);
 import "highlight.js/styles/androidstudio.css";
+import CardResult from "./CardResult";
 
 const Biodata = ({
   setRun,
@@ -94,25 +95,7 @@ const Biodata = ({
       </button>
       {run && (
         <div className="lg:hidden block bg-slate-200 p-4 rounded-md">
-          <p className="text-justify">
-            Hello, I am Usaid Alkamil Anshorulloh and people address me Aka. I
-            was born in 2 January 1999.
-          </p>
-          <p className="text-justify">
-            I have experience with the following tech skills:
-          </p>
-          <p>
-            <span className="font-bold">language</span> : JavaScript,
-            TypeScript.
-          </p>
-          <p>
-            <span className="font-bold">frontEnd</span> : HTML, CSS, ReactJS,
-            NextJS, TailwindCSS.
-          </p>
-          <p>
-            <span className="font-bold">backEnd</span> : NodeJS, ExpressJS,
-            SequelizeJS, MySQL.{" "}
-          </p>
+          <CardResult />
         </div>
       )}
     </>
