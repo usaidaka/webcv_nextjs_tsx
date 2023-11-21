@@ -20,19 +20,20 @@ const Photo = ({ run }: { run: boolean }) => {
         alt={"my picture"}
         width={100}
         height={100}
-        className="rounded-full shadow-4xl lg:w-44 "
+        className="rounded-full shadow-4xl lg:w-44 transition-all"
       />
       <button
         onClick={handleFormal}
         className={clsx(
-          "bg-green-500 w-fit px-4 h-8 rounded-md text-xs lg:text-base rotate-6 hover:rotate-0 transition-all",
+          "bg-blue-500 w-fit px-4 h-8 rounded-md lg:text-base hover:rotate-6  transition-all ",
           {
-            "bg-blue-500 text-white -rotate-6 hover:rotate-0 transition-all":
-              isFormal,
+            " bg-green-500 hover:-rotate-6 transition-all": isFormal,
           }
         )}
       >
-        {isFormal ? "Formal Photo" : "Non Formal Photo"}
+        <span className=" text-xs font-semibold text-white ">
+          {isFormal ? "Formal Photo" : "Non Formal Photo"}
+        </span>
       </button>
       {run && (
         <div className="hidden lg:block bg-slate-200 w-80 p-4 rounded-md text-sm">

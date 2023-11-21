@@ -2,13 +2,18 @@
 import Link from "next/link";
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
-import { FaClipboardUser } from "react-icons/fa6";
+import { FaClipboardUser, FaUserGraduate } from "react-icons/fa6";
 import { AiFillProject } from "react-icons/ai";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 
 const menus = [
   { href: "/profile", icon: <FaUserCircle />, text: "Profile" },
+  {
+    href: "/profile/education",
+    icon: <FaUserGraduate />,
+    text: "Education",
+  },
   {
     href: "/profile/experience",
     icon: <FaClipboardUser />,

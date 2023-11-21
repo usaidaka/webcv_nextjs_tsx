@@ -74,7 +74,7 @@ const Biodata = ({
       <div className="bg-slate-200 p-6 relative rounded-md w-fit flex flex-wrap">
         <button
           onClick={handleRun}
-          className="hidden lg:block lg:absolute right-6 bg-blue-500 text-white px-4 py-2 rounded-lg"
+          className="hidden lg:block lg:absolute right-6 bg-blue-500 text-white px-4 py-2 rounded-lg text-xs font-semibold"
         >
           Run introduceMySelf()
         </button>
@@ -88,7 +88,7 @@ const Biodata = ({
       </div>
       <button
         onClick={handleRun}
-        className="lg:hidden right-6 bg-blue-500 text-white px-4 py-2 rounded-lg"
+        className="lg:hidden right-6 bg-blue-500 text-white px-4 py-2 rounded-lg text-xs font-semibold"
       >
         Run introduceMySelf()
       </button>
