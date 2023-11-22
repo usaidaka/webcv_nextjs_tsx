@@ -25,6 +25,10 @@ const config: Config = {
         bebas: "Bebas Neue",
         dm: "DM Sans",
       },
+      backgroundColor: {
+        cover:
+          "linear-gradient(180deg, rgba(100,181,246,1) 0%, rgba(236,240,252,1) 30%, rgba(236,240,252,1) 60%, rgba(100,181,246,1) 100%)",
+      },
     },
   },
   plugins: [],
