@@ -19,6 +19,11 @@ const config: Config = {
           "-10px -10px 30px 4px rgba(0,0,0,0.1), 10px 10px 30px 4px rgba(45,78,255,0.15)",
         "5xl":
           "5px 5px rgba(33, 150, 243,0.4), 10px 10px rgba(33, 150, 243,0.3), 15px 15px rgba(33, 150, 243,0.2), 20px 20px rgba(33, 150, 243,0.1), 25px 25px rgba(33, 150, 243,0.05)",
+        "6xl": "rgba(33, 150, 243, 0.5) 0px 0px 16px",
+      },
+      fontFamily: {
+        bebas: "Bebas Neue",
+        dm: "DM Sans",
       },
     },
   },

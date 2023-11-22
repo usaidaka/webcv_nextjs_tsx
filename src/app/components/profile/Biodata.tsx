@@ -67,7 +67,7 @@ const Biodata = ({
   }).value;
 
   const handleRun = () => {
-    setRun(!run);
+    setRun(true);
   };
 
   return (
