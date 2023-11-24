@@ -21,7 +21,7 @@ const Photo = ({ run }: { run: boolean }) => {
         height={100}
         className="rounded-full shadow-4xl lg:w-36 object-cover transition-all"
       />
-      <div className="flex gap-6">
+      <div className="flex lg:gap-6 lg:flex-row flex-col justify-center items-center ">
         <a
           href="https://instagram.com/usaidaka"
           target="_blank"
@@ -32,7 +32,7 @@ const Photo = ({ run }: { run: boolean }) => {
             alt={"instagram icon"}
             width={100}
             height={100}
-            className="rounded-full shadow-4xl lg:w-6 object-cover transition-all"
+            className="rounded-full shadow-4xl w-6 object-cover transition-all"
           />
 
           <span className="text-xs">@usaidaka</span>
@@ -47,7 +47,7 @@ const Photo = ({ run }: { run: boolean }) => {
             alt={"whatsapp icon"}
             width={100}
             height={100}
-            className="rounded-full shadow-4xl lg:w-6 object-cover transition-all"
+            className="rounded-full shadow-4xl w-6 object-cover transition-all"
           />
           <span className="text-xs">+6289652433206</span>
         </a>
