@@ -15,27 +15,43 @@ const Photo = ({ run }: { run: boolean }) => {
   return (
     <div className="flex flex-col lg:w-96 w-full justify-center items-center space-y-2 ">
       <Image
-        src={
-          isFormal ? "/UsaidAlkamilFormal.jpg" : "/UsaidAlkamilNonFormal.jpg"
-        }
+        src={"/UsaidAlkamilFormal.jpg"}
         alt={"my picture"}
         width={100}
         height={100}
-        className="rounded-full shadow-4xl lg:w-44 transition-all"
+        className="rounded-full shadow-4xl lg:w-36 object-cover transition-all"
       />
-      <button
-        onClick={handleFormal}
-        className={clsx(
-          "bg-blue-500 w-fit px-4 h-8 rounded-md lg:text-base hover:rotate-6  transition-all ",
-          {
-            " bg-green-500 hover:-rotate-6 transition-all": isFormal,
-          }
-        )}
-      >
-        <span className=" text-xs font-semibold text-white ">
-          {isFormal ? "Formal Photo" : "Non Formal Photo"}
-        </span>
-      </button>
+      <div className="flex gap-6">
+        <a
+          href="https://instagram.com/usaidaka"
+          target="_blank"
+          className="flex items-center gap-1"
+        >
+          <Image
+            src={"/igIcon.png"}
+            alt={"instagram icon"}
+            width={100}
+            height={100}
+            className="rounded-full shadow-4xl lg:w-6 object-cover transition-all"
+          />
+
+          <span className="text-xs">@usaidaka</span>
+        </a>
+        <a
+          href="https://wa.me/089652433206"
+          target="_blank"
+          className="flex  items-center gap-1"
+        >
+          <Image
+            src={"/waIcon.png"}
+            alt={"whatsapp icon"}
+            width={100}
+            height={100}
+            className="rounded-full shadow-4xl lg:w-6 object-cover transition-all"
+          />
+          <span className="text-xs">+6289652433206</span>
+        </a>
+      </div>
       {run && (
         <div className="hidden lg:block bg-slate-200 w-80 p-4 rounded-md text-sm">
           <CardResult />
